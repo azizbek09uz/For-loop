@@ -1,9 +1,12 @@
 `use strict`
 
 
+
 let n = +prompt('N ni kiriting', '');
+let x = +prompt('X ni kiriting', '');
 let y = 0;
 let faktorial;
+
 
 
 for (var i = 0; i <= n; i++) {
@@ -11,7 +14,7 @@ for (var i = 0; i <= n; i++) {
   for (var j = 1; j <= i; j++) {
     faktorial *= j;
   }
-  y += 1 / faktorial;
+  y += Math.pow(x, i) / faktorial;
 }
 
 alert("Yig'indi: " + y);
